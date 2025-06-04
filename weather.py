@@ -1,7 +1,7 @@
 import requests
 def get_weather():
     api_key = "c481d27ff53a4618ade221833250406"
-    location = "KWASU Malete, NG"
+    location = input("Enter your current location: ")
     url = "https://api.weatherapi.com/v1/current.json"
     params = {
         "key": api_key,
@@ -27,4 +27,5 @@ if __name__ =="__main__":
     print("location:", weather['location'])
     print("Temperature (C):", weather['temperature_c'])
     print("Temperature (F):", weather['temperature_f'])
+    
     
